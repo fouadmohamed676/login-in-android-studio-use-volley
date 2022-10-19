@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Create_Acount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#20516A"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:background="@color/fouadcolor"
+                android:id="@+id/textView4"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/cairoregulartow"
+                android:text="إنشاء حساب جديد"
+                android:textColor="#FAFBFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:background="@color/fouadcolor"
+                android:id="@+id/home_ic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_home" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cr"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="مرحبا بك .."
+                android:fontFamily="@font/cairoregulartow"
+                android:textColor="@color/fouadcolor"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:backgroundTint="#CFCFE1"
+                android:background="@drawable/bottom_screen"
+                tools:ignore="MissingConstraints">
+
+
+                <EditText
+                    android:id="@+id/ednaame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:background="@drawable/edit_text_design"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint=" الإسم"
+                    android:inputType="textEmailAddress"
+                    android:padding="7dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:fontFamily="@font/cairoregulartow"
+                    android:id="@+id/edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_design"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint=" الإيميل"
+                    android:inputType="textEmailAddress"
+                    android:padding="7dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_design"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:hint=" كلمة السر"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+                <EditText
+                    android:id="@+id/edphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:background="@drawable/edit_text_design"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:gravity="right"
+                    android:hint="رقم الهاتف"
+                    android:inputType="number"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+                <EditText
+                    android:id="@+id/edcomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:background="@drawable/edit_text_design"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_drive_file"
+                    android:gravity="right"
+                    android:hint="الأمراض المزمنة"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+
+                <EditText
+                    android:id="@+id/edaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:background="@drawable/edit_text_design"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_baseline_home"
+                    android:gravity="right"
+                    android:hint="السكن"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+                <EditText
+                    android:id="@+id/edblood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_design"
+                    android:ems="10"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:drawableLeft="@drawable/ic_drive_file"
+                    android:gravity="right"
+                    android:hint="فصيلة الدم"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+                <EditText
+                    android:id="@+id/eddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_design"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:gravity="right"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:hint="تاريخ الميلاد"
+                    android:inputType="datetime"
+                    android:textSize="15dp"
+                    android:padding="7dp"
+                    android:textStyle="bold"
+                    app:passwordToggleEnabled="true" />
+
+
+                <Button
+                    android:id="@+id/log_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairoregulartow"
+                    android:backgroundTint="@color/fouadcolor"
+                    android:text="Singup"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
